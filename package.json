@@ -1,0 +1,21 @@
+{
+    "name": "dcbot-bopomofo",
+    "version": "1.2.0",
+    "description": "Translate bopomofo typo on Discord.",
+    "main": "main.js",
+    "dependencies": {
+        "brainfuck-node": "^1.0.2",
+        "discord.js": "^12.3.1",
+        "express": "^4.17.1",
+        "js-base64": "^3.6.0",
+        "jszhuyin": "^1.1.1"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "start": "echo \"START\"; bash build.sh; npm install; node --max-old-space-size=512 main.js",
+        "dev": "echo \"DEV\"; node patch.js; node --max-old-space-size=512 main.js",
+        "devbot": "echo \"DEV-BOT\"; node patch.js; node --max-old-space-size=512 main.js dev"
+    },
+    "author": "LianSheng",
+    "license": "ISC"
+}
